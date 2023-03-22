@@ -1,0 +1,19 @@
+
+nav {
+    display: flex;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: cyan;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 10vh;
+    font-size: 1.5rem;
+}
+
+.navbar__links ul {
+    list-style-type: none;
+    /* list elements horizontally */
+    align-self: center;
+    
+}
