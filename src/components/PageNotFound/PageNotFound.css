@@ -1,0 +1,15 @@
+.pageNotFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    color: cyan
+
+}
+
+.faSadTear {
+    font-size: 5em;
+    color: cyan;
+}
