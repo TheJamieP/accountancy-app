@@ -1,0 +1,14 @@
+.login {
+    width: 10em;
+    height: 5em;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid cyan;
+    box-shadow: 0 0 5px cyan;
+    border-radius: 1em;
+}

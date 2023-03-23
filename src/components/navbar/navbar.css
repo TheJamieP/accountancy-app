@@ -44,6 +44,9 @@ nav ul {
     color: cyan;
 
 }
+.faLogo-nav:hover {
+    color: magenta;
+}
 
 .faBars-nav:hover {
     color: magenta;
@@ -60,6 +63,7 @@ nav ul {
     position: absolute;
     left: 0%;
     transform: translate(1.15em);
+    text-align: center;
 }
 
 .navbar__links__container .navbar__links__container__link a {
@@ -88,6 +92,15 @@ nav ul {
     right: 0%;
     text-decoration: none;
     color: cyan;
+}
+
+.faCircleUser {
+    display: flex;
+    color: cyan;
+    font-size: 1em;
+}
+.faCircleUser:hover{
+    color: magenta;
 }
 
 

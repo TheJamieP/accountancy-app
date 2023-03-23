@@ -1,6 +1,10 @@
 import "./landing.css";
 import Navbar from "./components/navbar/navbar";
+import { useState } from "react";
+import { Navigate, redirect, useNavigate } from "react-router-dom";
+
 function App() {
+
   return (
     <div className="App">
       <Navbar />
@@ -27,7 +31,9 @@ function App() {
         </div>
       </div>
     </div>
-  );
+  )
+    
+
 }
 
 export default App;

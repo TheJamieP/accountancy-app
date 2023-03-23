@@ -1,6 +1,6 @@
 import "./navbar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faCircleDollarToSlot, faBook, faMagnifyingGlassChart, faCircleUser } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faCircleDollarToSlot, faBook, faMagnifyingGlassChart, faCircleUser, faMoneyBill } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -25,7 +25,7 @@ const Navbar = () => {
                                     <a href="/overview" style={{fontSize: "0.9em"}}><span><FontAwesomeIcon icon={faMagnifyingGlassChart} /></span> Overview</a>
                                 </li>
                                 <li className="navbar__links__container__link">
-                                    <a href="/transactions" style= {{fontSize: "0.75em"}}><span><FontAwesomeIcon icon={faBars} /></span> Transactions</a>
+                                    <a href="/transactions"><span><FontAwesomeIcon icon={faMoneyBill} /></span> Loans</a>
                                 </li>
                             </div>
                         )
@@ -33,7 +33,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar__login">
                     <li className="navbar__login__link">
-                        <a href="/login"><FontAwesomeIcon icon={faCircleUser}></FontAwesomeIcon></a>
+                        <a href="/login"><FontAwesomeIcon icon={faCircleUser} className="faCircleUser"/></a>
                     </li>
                 </div>
             </ul>
