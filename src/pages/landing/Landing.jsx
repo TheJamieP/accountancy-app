@@ -1,11 +1,9 @@
 import "./landing.css";
-import Navbar from "../navbar/navbar";
+import Navbar from "../../components/navbar/navbar";
 import { useState } from "react";
-// if the user is not logged in, they will be directed to the landing page
-
-
 
 function App() {
+  if (!localStorage.getItem("loggedIn")) document.location.href = "/Login/Landing";
   return (
     <div className="App">
       <Navbar />

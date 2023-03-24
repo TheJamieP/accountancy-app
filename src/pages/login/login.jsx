@@ -3,8 +3,12 @@ import "./login.css";
 const Login = () => {
     const [hide, setHide] = useState(false);
     const [loginFailed, setLoginFailed] = useState(false);
+
+    var redirect = document.location.href.split("/")[4];
+    if (!redirect) redirect = "Landing";
+    
     if (localStorage.getItem("loggedIn") === "true") {
-        document.location.href = "/Profile";
+        document.location.href = "/" + redirect;
     }else return (
         <>  
             <div className="login" style={{ display: hide ? "none" : "flex" }} onClick={()=> {
@@ -29,7 +33,7 @@ const Login = () => {
                         if (username === "test" && password === "test") {
                             setLoginFailed(false);
                             localStorage.setItem("loggedIn", "true")
-                            document.location.href = "/Landing";
+                            document.location.href = "/" + redirect;
                         } else {
                             setLoginFailed(true);
                         }

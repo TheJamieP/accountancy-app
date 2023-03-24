@@ -1,9 +1,10 @@
-import Navbar from "../navbar/navbar";
+import Navbar from "../../components/navbar/navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFaceFrown } from "@fortawesome/free-solid-svg-icons";
 import './PageNotFound.css';
 
 const PageNotFound = () => {
+    if(!localStorage.getItem("loggedIn")) document.location.href = "/Login/404";
     return (
         <div>
             <Navbar/>

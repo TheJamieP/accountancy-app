@@ -25,7 +25,7 @@ const Navbar = () => {
                                     <a href="/overview" style={{fontSize: "0.9em"}}><span><FontAwesomeIcon icon={faMagnifyingGlassChart} /></span> Overview</a>
                                 </li>
                                 <li className="navbar__links__container__link">
-                                    <a href="/transactions"><span><FontAwesomeIcon icon={faMoneyBill} /></span> Loans</a>
+                                    <a href="/loans"><span><FontAwesomeIcon icon={faMoneyBill} /></span> Loans</a>
                                 </li>
                             </div>
                         )
@@ -33,7 +33,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar__login">
                     <li className="navbar__login__link">
-                        <a href="/login"><FontAwesomeIcon icon={faCircleUser} className="faCircleUser"/></a>
+                        <a href="/login/profile"><FontAwesomeIcon icon={faCircleUser} className="faCircleUser"/></a>
                     </li>
                 </div>
             </ul>
