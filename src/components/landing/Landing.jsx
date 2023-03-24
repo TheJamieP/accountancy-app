@@ -1,10 +1,11 @@
 import "./landing.css";
-import Navbar from "./components/navbar/navbar";
+import Navbar from "../navbar/navbar";
 import { useState } from "react";
-import { Navigate, redirect, useNavigate } from "react-router-dom";
+// if the user is not logged in, they will be directed to the landing page
+
+
 
 function App() {
-
   return (
     <div className="App">
       <Navbar />
